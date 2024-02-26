@@ -20,10 +20,27 @@ const imgComp = document.getElementsByClassName("img");
 
 imgComp[0].classList.remove("hide");
 console.log(imgComp);
-
+upJs.classList.add("hide")
 downJs.addEventListener('click',function(){
+  upJs.classList.remove("hide")
   imgComp[counter].classList.add("hide")
   counter++;
   imgComp[counter].classList.remove("hide")
   console.log(counter);
+  if (counter === imgComp.length - 1) {
+    downJs.classList.add("hide")
+    
+  }
+})
+
+upJs.addEventListener('click',function(){
+  imgComp[counter].classList.add("hide")
+  counter--;
+  if (counter === 0) {
+    upJs.classList.add("hide")
+    
+  }
+  imgComp[counter].classList.remove("hide")
+  console.log(counter);
+  downJs.classList.remove("hide")
 })
