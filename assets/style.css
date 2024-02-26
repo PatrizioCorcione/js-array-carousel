@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(11, 11, 11);
+  background-color: rgb(62, 61, 61);
 }
 .container{
   height: 100vh;
@@ -19,9 +19,27 @@ img{
 }
 
 .imgs{
-  height: 400px;
-  width: 750px;
+  position: relative;
+  height: 90%;
+  width: 80%;
 }
 .hide{
   display: none;
+}
+.btn{
+  margin: 10px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.303);
+  border-radius: 50%;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.down{
+  cursor: pointer;
+  bottom: 0;
 }
