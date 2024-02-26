@@ -1,4 +1,4 @@
-const imgsJs = document.querySelector(".imgs")
+const imgsJs = document.querySelector(".imgs");
 const imgTot = [
   "assets/img/01.webp",
   "assets/img/02.webp",
@@ -7,11 +7,11 @@ const imgTot = [
   "assets/img/05.webp"
 ]
 let counter = 0;
-const upJs = document.querySelector(".up")
-const downJs = document.querySelector(".down")
-const containerSmall = document.querySelector(".container-small")
-const bagrDarkJs = document.querySelector(".bagr-dark")
-const bordGrayJs = document.querySelector(".bord-gray")
+const upJs = document.querySelector(".up");
+const downJs = document.querySelector(".down");
+const containerSmall = document.querySelector(".container-small");
+const bagrDarkJs = document.querySelector(".bagr-dark");
+const bordGrayJs = document.querySelector(".bord-gray");
 
 
 
@@ -35,10 +35,10 @@ imgBagr[0].classList.remove("bagr-dark");
 
 
 downJs.addEventListener('click',function(){
-  upJs.classList.remove("hide")
-  imgComp[counter].classList.add("hide")
-  imgBagr[counter].classList.add("bagr-dark")
-  imgBagr[counter].classList.remove("bord-gray")
+  upJs.classList.remove("hide");
+  imgComp[counter].classList.add("hide");
+  imgBagr[counter].classList.add("bagr-dark");
+  imgBagr[counter].classList.remove("bord-gray");
   counter++;
   
   if (counter == imgComp.length) {
@@ -46,23 +46,23 @@ downJs.addEventListener('click',function(){
     
   }
 
-  imgComp[counter].classList.remove("hide")
+  imgComp[counter].classList.remove("hide");
   console.log(counter);
-  imgBagr[counter].classList.remove("bagr-dark")
-  imgBagr[counter].classList.add("bord-gray")
+  imgBagr[counter].classList.remove("bagr-dark");
+  imgBagr[counter].classList.add("bord-gray");
 })
 
 upJs.addEventListener('click',function(){
-  imgComp[counter].classList.add("hide")
-  imgBagr[counter].classList.add("bagr-dark")
-  imgBagr[counter].classList.remove("bord-gray")
+  imgComp[counter].classList.add("hide");
+  imgBagr[counter].classList.add("bagr-dark");
+  imgBagr[counter].classList.remove("bord-gray");
   counter--;
   if (counter < 0) {
     counter=imgComp.length-1;
     
   }
-  imgBagr[counter].classList.remove("bagr-dark")
-  imgBagr[counter].classList.add("bord-gray")
-  imgComp[counter].classList.remove("hide")
-  downJs.classList.remove("hide")
+  imgBagr[counter].classList.remove("bagr-dark");
+  imgBagr[counter].classList.add("bord-gray");
+  imgComp[counter].classList.remove("hide");
+  downJs.classList.remove("hide");
 })
