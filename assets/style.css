@@ -3,12 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: rgb(62, 61, 61);
-}
 .container{
-  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container-img{
+  position: relative;
+  height: 90%;
+  width:  80%;
   justify-content: center;
   align-items: center;
 }
@@ -19,14 +23,14 @@ img{
 }
 
 .imgs{
-  position: relative;
-  height: 90%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
 }
 .hide{
   display: none;
 }
 .btn{
+  position: absolute;
   margin: 10px;
   line-height: 40px;
   text-align: center;
@@ -35,11 +39,14 @@ img{
   text-align: center;
   height: 40px;
   width: 40px;
-  position: absolute;
   right: 50%;
   transform: translateX(50%);
+  cursor: pointer;
 }
 .down{
-  cursor: pointer;
+
   bottom: 0;
+}
+.up{
+  top: 0;
 }
