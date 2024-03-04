@@ -35,6 +35,14 @@ imgBagr[0].classList.remove("bagr-dark");
 
 
 downJs.addEventListener('click',function(){
+  scrollDown()
+})
+
+upJs.addEventListener('click',function(){
+  scrollUp()
+})
+
+function scrollDown() {
   upJs.classList.remove("hide");
   imgComp[counter].classList.add("hide");
   imgBagr[counter].classList.add("bagr-dark");
@@ -50,9 +58,10 @@ downJs.addEventListener('click',function(){
   console.log(counter);
   imgBagr[counter].classList.remove("bagr-dark");
   imgBagr[counter].classList.add("bord-gray");
-})
+  
+}
 
-upJs.addEventListener('click',function(){
+function scrollUp() {
   imgComp[counter].classList.add("hide");
   imgBagr[counter].classList.add("bagr-dark");
   imgBagr[counter].classList.remove("bord-gray");
@@ -65,4 +74,5 @@ upJs.addEventListener('click',function(){
   imgBagr[counter].classList.add("bord-gray");
   imgComp[counter].classList.remove("hide");
   downJs.classList.remove("hide");
-})
+  
+}
